@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 DATE=$(date +%F:%H:%M:%S)
-LOG_FILE_DIRECTORY=/tmp/
+LOG_FILE_DIRECTORY=/tmp
 SCRIPT_NAME=$0
 LOGFILE=$LOG_FILE_DIRECTORY/$0-$DATE.log
 R="\e[31m"
@@ -56,7 +56,7 @@ VALIDATE $? "installing dependencies"
 
 cp /home/centos/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service &>>$LOGFILE
 
-VALIDATE $? "copying catalogie.service"
+VALIDATE $? "copying catalogue.service"
 
 systemctl daemon-reload &>>$LOGFILE
 

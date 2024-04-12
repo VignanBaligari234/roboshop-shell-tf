@@ -52,7 +52,7 @@ VALIDATE $? "moving to html directory"
 
 unzip /tmp/web.zip &>>$LOGFILE
 
-VALIDATE $? "unzipping the web.zip"
+VALIDATE $? "unzipping the web.zip" 
 
 cp /root/roboshop-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf &>>$LOGFILE 
 

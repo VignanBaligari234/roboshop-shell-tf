@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
-DATE=$(date +%F:%H:%M:%S)
+DATE=$(date +%F)
 LOG_FILE_DIRECTORY=/tmp
 SCRIPT_NAME=$0
 LOGFILE=$LOG_FILE_DIRECTORY/$0-$DATE.log

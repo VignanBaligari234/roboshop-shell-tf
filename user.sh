@@ -54,7 +54,7 @@ npm install &>>$LOGFILE
 
 VALIDATE $? "installing dependencies"
 
-cp user.service /etc/systemd/system/user.service &>>$LOGFILE
+cp /roboshop-shell/user.service /etc/systemd/system/user.service &>>$LOGFILE
 
 VALIDATE $? "copying user.service"
 
@@ -70,7 +70,7 @@ systemctl start user &>>$LOGFILE
 
 VALIDATE $? "starting the user"
 
-cp mongo.repo /etc/yum.repos.d/mongo.repo &>>$LOGFILE
+cp /roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo &>>$LOGFILE
 
 VALIDATE $? "copying user.repo"
 

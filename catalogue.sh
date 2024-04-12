@@ -78,6 +78,6 @@ yum install mongodb-org-shell -y &>>$LOGFILE
 
 VALIDATE $? "installing mongodb client"
 
-mongo --host mangodb.vignanspace.online </app/schema/catalogue.js &>>$LOGFILE
+mongo --host mongodb.vignanspace.online </app/schema/catalogue.js &>>$LOGFILE
 
 VALIDATE $? "loading the catalogue data into mongodb" 

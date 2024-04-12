@@ -50,11 +50,15 @@ unzip /tmp/user.zip &>>$LOGFILE
 
 VALIDATE $? "unzipping the user.zip"
 
+cd /app &>>$LOGFILE
+
+VALIDATE $? "moving to app directory"
+
 npm install &>>$LOGFILE
 
 VALIDATE $? "installing dependencies"
 
-cp /roboshop-shell/user.service /etc/systemd/system/user.service &>>$LOGFILE
+cp /home/centos/roboshop-shell/user.service /etc/systemd/system/user.service &>>$LOGFILE
 
 VALIDATE $? "copying user.service"
 
@@ -70,7 +74,7 @@ systemctl start user &>>$LOGFILE
 
 VALIDATE $? "starting the user"
 
-cp /roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo &>>$LOGFILE
+cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo &>>$LOGFILE
 
 VALIDATE $? "copying user.repo"
 

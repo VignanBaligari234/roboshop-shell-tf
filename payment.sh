@@ -28,7 +28,7 @@ VALIDATE(){
 
 yum install python36 gcc python3-devel -y $>>$LOGFILE
 
-VALIDATE $? "installing python"
+#VALIDATE $? "installing python"
 
 useradd roboshop $>>$LOGFILE 
 

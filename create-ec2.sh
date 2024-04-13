@@ -2,7 +2,7 @@
 
 NAMES=("mongodb" "mysql" "redis" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "web")
 INSTANCE_TYPE=""
-IMAGE_ID=ami-03265a0778a880afb
+IMAGE_ID=ami-0a699202e5027c10d
 SECURITY_GROUP_ID=sg-0aa81d8005abce19b
 
 for i in "${NAMES[@]}"

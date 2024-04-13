@@ -3,7 +3,7 @@
 NAMES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
 INSTANCE_TYPE=""
 IMAGE_ID=ami-0a699202e5027c10d
-SECURITY_GROUP_ID=sg-0fea9f28567c26149
+SECURITY_GROUP_ID=sg-0a5c5461e954b11fd
 DOMAIN_NAME=vignanspace.online
 
 # if mysql or mongodb instance_type should be t3.medium , for all others it is t2.micro

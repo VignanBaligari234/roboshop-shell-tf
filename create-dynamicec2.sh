@@ -2,10 +2,10 @@
 
 NAMES=$@
 INSTANCE_TYPE=""
-IMAGE_ID=ami-0f3c7d07486cad139
-SECURITY_GROUP_ID=sg-0aa81d8005abce19b
-DOMAIN_NAME=vignanspace.online
-HOSTED_ZONE=Z02363281OB5K9FSAJUWC
+IMAGE_ID=ami-0b4f379183e5706b9
+SECURITY_GROUP_ID=sg-0e740e119767dbe1c
+DOMAIN_NAME=vignanlabs.online
+HOSTED_ZONE=Z03542562GV6UQYCXD7DV
 
 # if mysql or mongodb instance_type should be t3.medium , for all others it is t2.micro
 

@@ -58,7 +58,7 @@ npm install &>>$LOGFILE
 
 VALIDATE $? "installing dependencies"
 
-cp /root/roboshop-shell/cart.service /etc/systemd/system/cart.service &>>$LOGFILE
+cp /root/roboshop-shell-tf/cart.service /etc/systemd/system/cart.service &>>$LOGFILE
 
 VALIDATE $? "copying cart.service"
 

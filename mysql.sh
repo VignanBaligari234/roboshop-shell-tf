@@ -30,7 +30,7 @@ yum module disable mysql -y &>>$LOGFILE
 
 VALIDATE $? "disbling mysql"
 
-cp /root/roboshop-shell/mysql.repo /etc/yum.repos.d/mysql.repo &>>$LOGFILE 
+cp /root/roboshop-shell-tf/mysql.repo /etc/yum.repos.d/mysql.repo &>>$LOGFILE 
 
 VALIDATE $? "copying mysql repo"
 

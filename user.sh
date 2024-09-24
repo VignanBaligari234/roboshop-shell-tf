@@ -58,7 +58,7 @@ npm install &>>$LOGFILE
 
 VALIDATE $? "installing dependencies"
 
-cp /root/roboshop-shell/user.service /etc/systemd/system/user.service &>>$LOGFILE
+cp /root/roboshop-shell-tf/user.service /etc/systemd/system/user.service &>>$LOGFILE
 
 VALIDATE $? "copying user.service"
 
@@ -74,7 +74,7 @@ systemctl start user &>>$LOGFILE
 
 VALIDATE $? "starting the user"
 
-cp /root/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo &>>$LOGFILE
+cp /root/roboshop-shell-tf/mongo.repo /etc/yum.repos.d/mongo.repo &>>$LOGFILE
 
 VALIDATE $? "copying user.repo"
 
@@ -82,6 +82,6 @@ yum install mongodb-org-shell -y &>>$LOGFILE
 
 VALIDATE $? "installing mongodb client"
 
-mongo --host mongodb.vignanspace.online </app/schema/user.js &>>$LOGFILE
+mongo --host mongodb.vignanlabs.online </app/schema/user.js &>>$LOGFILE
 
 VALIDATE $? "loading the user data into mongodb" 

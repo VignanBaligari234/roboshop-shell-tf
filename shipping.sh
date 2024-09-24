@@ -58,7 +58,7 @@ mv target/shipping-1.0.jar shipping.jar &>>$LOGFILE
 
 VALIDATE $? "renaming shipping file to .jar"
 
-cp /root/roboshop-shell/shipping.service /etc/systemd/system/shipping.service &>>$LOGFILE
+cp /root/roboshop-shell-tf/shipping.service /etc/systemd/system/shipping.service &>>$LOGFILE
 
 VALIDATE $? "copying shipping service"
 

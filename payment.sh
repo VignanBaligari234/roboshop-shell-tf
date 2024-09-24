@@ -54,7 +54,7 @@ pip3.6 install -r requirements.txt $>>$LOGFILE
 
 VALIDATE $? "installing python dependencies"
 
-cp /root/roboshp-shell/payment.service /etc/systemd/system/payment.service $>>$LOGFILE
+cp /root/roboshp-shell-tf/payment.service /etc/systemd/system/payment.service $>>$LOGFILE
 
 VALIDATE $? "copying payment service"
 
